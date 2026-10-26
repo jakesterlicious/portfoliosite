@@ -1,49 +1,46 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>Jake Lewis Portfolio</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>Jake Lewis Portfolio</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Jake Lewis is an AI-forward UI/UX product designer in Orange County, CA with 6+ years of experience designing intuitive interfaces, scalable design systems, and user-centered workflows.">
+<meta name="description" content="Jake Lewis is an AI-forward UI/UX product designer in Orange County, CA with 7+ years of experience designing intuitive interfaces, scaling design systems, and testing with real users.">
 <meta property="og:title" content="Jake Lewis, Product Designer">
-<meta property="og:description" content="UI/UX designer with 6+ years of experience. Case studies, explorations and resume.">
+<meta property="og:description" content="UI/UX designer with 7+ years of experience. Case studies, explorations and resume.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Jake Lewis, Product Designer">
-<meta name="twitter:description" content="UI/UX designer with 6+ years of experience. Case studies, explorations and resume.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Jake Lewis","jobTitle":"Product Designer","description":"UI/UX designer with 6+ years of experience designing intuitive interfaces, scalable design systems, and user-centered workflows.","address":{"@type":"PostalAddress","addressRegion":"CA","addressLocality":"Orange County"},"email":"lewisrjacob@gmail.com"}</script>
+<meta name="twitter:description" content="UI/UX designer with 7+ years of experience. Case studies, explorations and resume.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Jake Lewis","jobTitle":"Product Designer","description":"UI/UX designer with 7+ years of experience designing intuitive interfaces, scaling design systems, and testing with real users.","address":{"@type":"PostalAddress","addressRegion":"CA","addressLocality":"Orange County"},"email":"lewisrjacob@gmail.com"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap">
 <style>
-/* Layout concept: one narrow reading column (like a printed page) with wide, tactile image blocks breaking out of it.
-   Big statement type up top, plain facts below, work shown as real screens. */
+/* Layout: a designer's canvas. One selected frame in the hero carries the identity; everything after it sits quiet and left-aligned on an 8px grid. */
 :root{
-  --bg:#f3f4f6;          /* cool paper */
-  --ink:#0d0f14;         /* near-black from the original file */
-  --muted:#596070;
-  --line:#d9dce3;
-  --tile:#e6e8ed;
-  --accent:#1f4fff;      /* single signal blue */
-  --accent-ink:#ffffff;
-  --font-display:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;
-  --font-body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --font-mono:"DM Mono",ui-monospace,Menlo,monospace;
-  --col:46rem;
-  --wide:68rem;
-  --r:18px;
+  --bg:#FBFBFA;
+  --ink:#16181D;
+  --muted:#5F6470;
+  --rule:#E2E3E7;
+  --well:#EEEFF2;
+  --select:#0870C8;
+  --select-ink:#FFFFFF;
+  --font:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --u:8px;
+  --wide:72rem;
+  --r:6px;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#0c0e12;--ink:#f1f2f4;--muted:#9aa1ae;--line:#272b34;--tile:#171a21;--accent:#7b97ff;--accent-ink:#0c0e12;color-scheme:dark;
+    --bg:#17181B;--ink:#ECEDEF;--muted:#9DA1AB;--rule:#2B2D32;--well:#222327;--select:#4BA8FF;--select-ink:#0E1116;color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#0c0e12;--ink:#f1f2f4;--muted:#9aa1ae;--line:#272b34;--tile:#171a21;--accent:#7b97ff;--accent-ink:#0c0e12;color-scheme:dark;
+  --bg:#17181B;--ink:#ECEDEF;--muted:#9DA1AB;--rule:#2B2D32;--well:#222327;--select:#4BA8FF;--select-ink:#0E1116;color-scheme:dark;
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:5rem}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--u) * 10)}
 body{
   margin:0;background:var(--bg);color:var(--ink);
-  font-family:var(--font-body);font-size:1.0625rem;line-height:1.6;
+  font-family:var(--font);font-size:1.0625rem;line-height:1.55;
   padding-left:max(16px,env(safe-area-inset-left,0px));
   padding-right:max(16px,env(safe-area-inset-right,0px));
   -webkit-font-smoothing:antialiased;
@@ -51,163 +48,158 @@ body{
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
-h1,h2,h3,h4{font-family:var(--font-display);margin:0;text-wrap:balance;letter-spacing:-.02em;line-height:1.05}
-p{margin:0}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+h1,h2,h3,h4{margin:0;font-weight:700;line-height:1.1;text-wrap:balance}
+p,ul,dl,dd{margin:0}
 button{font:inherit;color:inherit}
-.mono{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
-.col{max-width:var(--col);margin-inline:auto}
-.wide{max-width:var(--wide);margin-inline:auto}
+:focus-visible{outline:2px solid var(--select);outline-offset:3px;border-radius:2px}
+.wide,.col{max-width:var(--wide);margin-inline:auto}
 
 /* header */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid transparent;transition:border-color .2s}
-.top.stuck{border-bottom-color:var(--line)}
-.top-in{max-width:var(--wide);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.9rem}
-.brand{font-family:var(--font-display);font-weight:800;font-size:1.15rem;text-decoration:none;letter-spacing:-.02em}
-nav{display:flex;align-items:center;gap:.25rem;flex-wrap:wrap;justify-content:flex-end}
-nav a,.theme{font-size:.92rem;text-decoration:none;padding:.35rem .7rem;border-radius:999px;color:var(--muted);transition:background .15s,color .15s}
-nav a:hover,.theme:hover{background:var(--tile);color:var(--ink)}
-.theme{border:0;background:none;cursor:pointer;display:grid;place-items:center;width:2.1rem;height:2.1rem;padding:0}
-.theme svg{width:1.05rem;height:1.05rem}
+.top.stuck{border-bottom-color:var(--rule)}
+.top-in{max-width:var(--wide);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:calc(var(--u) * 2);padding-block:calc(var(--u) * 2)}
+.brand{font-weight:700;font-stretch:112%;font-size:1.0625rem;text-decoration:none;letter-spacing:-.01em}
+nav{display:flex;align-items:center;gap:var(--u);flex-wrap:wrap;justify-content:flex-end}
+nav a{font-size:.9375rem;text-decoration:none;color:var(--muted);padding:var(--u)}
+nav a:hover{color:var(--ink)}
+.theme{border:0;background:none;cursor:pointer;width:32px;height:32px;display:grid;place-items:center;color:var(--muted);border-radius:var(--r)}
+.theme:hover{color:var(--ink);background:var(--well)}
+.theme svg{width:18px;height:18px}
 @media (max-width:34rem){nav a.opt{display:none}}
 
-/* hero */
-.hero{padding-block:clamp(3rem,9vw,7rem) clamp(2.5rem,6vw,4.5rem)}
-.eyebrow{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-items:center;color:var(--muted)}
-.clock{display:inline-flex;align-items:center;gap:.5rem}
-.clock i{width:.5rem;height:.5rem;border-radius:50%;background:var(--accent);display:inline-block}
-.name{font-size:clamp(3.6rem,15vw,10.5rem);font-weight:800;line-height:.88;letter-spacing:-.045em;margin-block:1.1rem 2rem}
-.name span{display:block}
-.lede{font-size:clamp(1.35rem,3.2vw,2rem);line-height:1.3;letter-spacing:-.015em;font-weight:500;max-width:34ch}
-.sub{margin-top:1.75rem;color:var(--muted);max-width:52ch;font-size:1.05rem}
-.hero .rise{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
-.hero .rise:nth-child(2){animation-delay:.08s}.hero .rise:nth-child(3){animation-delay:.16s}.hero .rise:nth-child(4){animation-delay:.24s}.hero .rise:nth-child(5){animation-delay:.32s}
-@keyframes rise{from{opacity:.001;transform:translateY(18px)}to{opacity:1;transform:none}}
+/* hero: the name as a selected frame */
+.hero{padding-block:calc(var(--u) * 12) calc(var(--u) * 2)}
+.sel{position:relative;display:inline-block;max-width:100%;margin-top:calc(var(--u) * 3)}
+.sel-tag{position:absolute;bottom:100%;left:-1px;margin-bottom:6px;font-size:.8125rem;font-weight:500;color:var(--select);white-space:nowrap}
+.name{font-size:clamp(2.75rem,12vw,8.75rem);font-weight:800;font-stretch:116%;letter-spacing:-.035em;line-height:.92;padding:.07em .09em .11em;white-space:nowrap}
+.sel-box{position:absolute;inset:0;border:1.5px solid var(--select);pointer-events:none}
+.hdl{position:absolute;width:9px;height:9px;background:var(--bg);border:1.5px solid var(--select);pointer-events:none}
+.hdl.tl{top:-4px;left:-4px}.hdl.tr{top:-4px;right:-4px}.hdl.bl{bottom:-4px;left:-4px}.hdl.br{bottom:-4px;right:-4px}
+.dims{position:absolute;top:100%;left:50%;transform:translate(-50%,8px);background:var(--select);color:var(--select-ink);font-size:.75rem;font-weight:500;line-height:1;padding:4px 6px;border-radius:3px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.lede{margin-top:calc(var(--u) * 8);font-size:clamp(1.25rem,2.6vw,1.75rem);line-height:1.35;letter-spacing:-.01em;max-width:36ch}
+.where{margin-top:calc(var(--u) * 3);color:var(--muted);display:flex;flex-wrap:wrap;gap:var(--u) calc(var(--u) * 3)}
+@media (prefers-reduced-motion:no-preference){
+  .sel-box{animation:draw .55s .2s cubic-bezier(.2,.7,.2,1) both}
+  .hdl,.dims,.sel-tag{animation:appear .25s .65s ease-out both}
+}
+@keyframes draw{from{clip-path:inset(0 100% 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes appear{from{opacity:0}to{opacity:1}}
 
 /* sections */
-section.block{padding-block:clamp(2.5rem,6vw,4.5rem)}
-.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:2rem;border-top:1px solid var(--line);padding-top:1.25rem}
-.sec-head h2{font-size:clamp(2rem,5vw,3.25rem);font-weight:800}
-.sec-head .mono{color:var(--muted)}
+.block{padding-block:calc(var(--u) * 10)}
+.head{display:grid;gap:var(--u);margin-bottom:calc(var(--u) * 5);padding-top:calc(var(--u) * 3);border-top:1px solid var(--rule)}
+.head h2{font-size:clamp(1.75rem,4vw,2.5rem);font-stretch:112%;letter-spacing:-.02em}
+.head p{color:var(--muted);max-width:52ch}
+
+/* case studies */
+.cases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:calc(var(--u) * 7) calc(var(--u) * 3)}
+.case{display:grid;gap:calc(var(--u) * 2);align-content:start;text-decoration:none;min-width:0}
+.case.feature{grid-column:1/-1;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);align-items:end;gap:calc(var(--u) * 4)}
+@media (max-width:44rem){.cases{grid-template-columns:1fr}.case.feature{grid-template-columns:1fr;gap:calc(var(--u) * 2)}}
+.shot{border-radius:var(--r);overflow:hidden;background:var(--well);aspect-ratio:5/3;max-width:100%;outline:2px solid transparent;outline-offset:-2px;transition:outline-color .15s}
+.shot img{width:100%;height:100%;object-fit:cover}
+.case:hover .shot,.case:focus-visible .shot{outline-color:var(--select)}
+.case:focus-visible{outline:none}
+.case h3{font-size:1.5rem;font-stretch:112%;letter-spacing:-.015em}
+.case.feature h3{font-size:clamp(1.75rem,3.5vw,2.375rem)}
+.case p{color:var(--muted);margin-top:6px;max-width:42ch}
+.more{display:inline-block;margin-top:calc(var(--u) * 1.5);font-size:.9375rem;font-weight:500;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.case:hover .more{color:var(--select)}
 
 /* explorations */
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(.6rem,1.6vw,1.1rem)}
-.tile{all:unset;box-sizing:border-box;cursor:zoom-in;display:block;border-radius:var(--r);overflow:hidden;background:var(--tile);position:relative;aspect-ratio:392/317;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(var(--u) * 2)}
+@media (max-width:48rem){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--u)}}
+.tile{all:unset;box-sizing:border-box;cursor:zoom-in;display:block;max-width:100%;border-radius:var(--r);overflow:hidden;background:var(--well);aspect-ratio:392/317;outline:2px solid transparent;outline-offset:-2px;transition:outline-color .15s}
 .tile img{width:100%;height:100%;object-fit:cover}
-.tile:hover{transform:translateY(-4px) scale(1.012);box-shadow:0 18px 40px -18px rgba(13,15,20,.45)}
-.tile:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.tile.last{grid-column:1/-1;aspect-ratio:16/7}
-.tile.last img{object-position:50% 22%}
-.grid:has(.tile:hover) .tile:not(:hover){opacity:.72}
-@media (min-width:56rem){.grid{grid-template-columns:repeat(2,1fr)}}
-
-/* case list */
-.cases{display:grid;gap:clamp(2rem,5vw,3.5rem)}
-.case{display:block;text-decoration:none}
-.case .shot{border-radius:var(--r);overflow:hidden;background:var(--tile);aspect-ratio:5/3}
-.case .shot img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
-.case:hover .shot img{transform:scale(1.035)}
-.case .meta{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1rem}
-.case h3{font-size:1.6rem;font-weight:800}
-.case p{color:var(--muted)}
-.arrow{flex:none;width:2.75rem;height:2.75rem;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:background .2s,color .2s,transform .3s,border-color .2s}
-.arrow svg{width:1.1rem;height:1.1rem}
-.case:hover .arrow{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);transform:rotate(-45deg)}
+.tile:hover,.tile:focus-visible{outline-color:var(--select)}
 
 /* resume */
-.job{display:grid;grid-template-columns:11rem 1fr;gap:.5rem 2rem;padding-block:1.6rem;border-top:1px solid var(--line)}
-.job:first-of-type{border-top:0;padding-top:0}
-.job .when{color:var(--muted)}
-.job h3{font-size:1.35rem;font-weight:800;margin-bottom:.15rem}
-.job .co{color:var(--muted);margin-bottom:.8rem}
-.job ul{margin:0;padding-left:1.1rem;display:grid;gap:.45rem}
-.job li::marker{color:var(--accent)}
+.job{display:grid;grid-template-columns:12rem minmax(0,1fr);gap:var(--u) calc(var(--u) * 4);padding-block:calc(var(--u) * 3);border-top:1px solid var(--rule)}
+.job:first-child{border-top:0;padding-top:0}
+.when{color:var(--muted);font-size:.9375rem;font-variant-numeric:tabular-nums;padding-top:4px}
+.job h3{font-size:1.25rem;font-stretch:108%;letter-spacing:-.01em}
+.co{color:var(--muted);margin-top:2px}
+.job ul{margin-top:calc(var(--u) * 1.5);padding-left:1.1rem;display:grid;gap:var(--u);max-width:64ch}
+.job li::marker{color:var(--muted)}
 @media (max-width:40rem){.job{grid-template-columns:1fr}}
 
 /* contact */
-.contact-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:clamp(2rem,5vw,4rem)}
-@media (max-width:48rem){.contact-grid{grid-template-columns:1fr}}
-.reach{display:grid;gap:1.4rem;align-content:start}
-.reach dt{color:var(--muted);margin-bottom:.2rem}
-.reach dd{margin:0;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;font-size:1.2rem;font-weight:500;overflow-wrap:anywhere}
-.copy{border:1px solid var(--line);background:none;border-radius:999px;padding:.2rem .7rem;font-size:.8rem;cursor:pointer;color:var(--muted)}
-.copy:hover{color:var(--ink);border-color:var(--ink)}
-form{display:grid;gap:1rem}
-label{display:grid;gap:.35rem;font-size:.85rem;color:var(--muted)}
-input,textarea{font:inherit;font-size:1rem;color:var(--ink);background:var(--tile);border:1px solid transparent;border-radius:12px;padding:.8rem .95rem;width:100%;min-width:0}
-input:focus,textarea:focus{outline:none;border-color:var(--accent);background:var(--bg)}
-textarea{min-height:9rem;resize:vertical}
-.btn{justify-self:start;border:0;cursor:pointer;background:var(--ink);color:var(--bg);font-weight:600;border-radius:999px;padding:.85rem 1.5rem;transition:transform .2s,background .2s}
-.btn:hover{background:var(--accent);color:var(--accent-ink);transform:translateY(-2px)}
-.btn[disabled]{opacity:.6;cursor:default;transform:none}
-.status{min-height:1.4rem;font-size:.95rem;color:var(--muted)}
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:calc(var(--u) * 6)}
+@media (max-width:48rem){.contact{grid-template-columns:1fr}}
+.reach{display:grid;gap:calc(var(--u) * 3);align-content:start}
+.reach dt{color:var(--muted);font-size:.9375rem;margin-bottom:4px}
+.reach dd{display:flex;align-items:center;gap:var(--u) calc(var(--u) * 1.5);flex-wrap:wrap;font-size:1.25rem;font-weight:500;overflow-wrap:anywhere}
+.copy{border:1px solid var(--rule);background:none;border-radius:var(--r);padding:4px 10px;font-size:.8125rem;font-weight:400;cursor:pointer;color:var(--muted)}
+.copy:hover{color:var(--ink);border-color:var(--muted)}
+form{display:grid;gap:calc(var(--u) * 2)}
+label{display:grid;gap:6px;font-size:.9375rem;color:var(--muted)}
+input,textarea{font:inherit;font-size:1rem;color:var(--ink);background:var(--well);border:1px solid transparent;border-radius:var(--r);padding:12px 14px;width:100%;min-width:0}
+input:focus,textarea:focus{outline:none;border-color:var(--select);background:var(--bg)}
+textarea{min-height:10rem;resize:vertical}
+.btn{justify-self:start;border:0;cursor:pointer;background:var(--ink);color:var(--bg);font-weight:600;border-radius:var(--r);padding:12px 20px;transition:background .15s,color .15s}
+.btn:hover{background:var(--select);color:var(--select-ink)}
+.btn[disabled]{opacity:.6;cursor:default}
+.status{min-height:1.5rem;font-size:.9375rem;color:var(--muted)}
 .status.ok{color:var(--ink)}
-.status.err{color:#d6322b}
-.fallback{display:none;gap:.6rem}
+.status.err{color:#C93A32}
+.fallback{display:none;gap:var(--u)}
 .fallback.on{display:grid}
-.fallback textarea{min-height:7rem;font-family:var(--font-mono);font-size:.85rem}
+.fallback textarea{min-height:7rem;font-size:.875rem}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 
-footer{border-top:1px solid var(--line);padding-block:2rem 4rem;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+footer{border-top:1px solid var(--rule);padding-block:calc(var(--u) * 4) calc(var(--u) * 8);color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--u) calc(var(--u) * 2);font-size:.9375rem}
 
 /* case study pages */
-.back{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--muted);padding:.4rem 0;margin-top:2rem}
+.back{display:inline-flex;align-items:center;gap:var(--u);text-decoration:none;color:var(--muted);margin-top:calc(var(--u) * 4)}
 .back:hover{color:var(--ink)}
-.back svg{width:1.2rem;height:1.2rem}
-.cs-title{font-size:clamp(2.6rem,8vw,5.5rem);font-weight:800;line-height:.95;letter-spacing:-.04em;margin-block:1.5rem 1.25rem}
-.cs-lede{font-size:clamp(1.2rem,2.6vw,1.6rem);line-height:1.35;color:var(--muted);max-width:38ch}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-block:2.5rem;padding-block:1.4rem;border-block:1px solid var(--line)}
-.facts dt{color:var(--muted);margin-bottom:.3rem}
-.facts dd{margin:0;font-weight:500}
+.back svg{width:18px;height:18px}
+.cs-title{font-size:clamp(2.5rem,7vw,5rem);font-weight:800;font-stretch:115%;letter-spacing:-.035em;line-height:.95;margin-block:calc(var(--u) * 3) calc(var(--u) * 2);max-width:16ch}
+.cs-lede{font-size:clamp(1.15rem,2.4vw,1.5rem);line-height:1.35;color:var(--muted);max-width:40ch}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(var(--u) * 3);margin-block:calc(var(--u) * 5);padding-block:calc(var(--u) * 3);border-block:1px solid var(--rule)}
+.facts dt{color:var(--muted);font-size:.875rem;margin-bottom:4px}
+.facts dd{font-weight:500}
 @media (max-width:40rem){.facts{grid-template-columns:1fr}}
-.hero-img{border-radius:var(--r);overflow:hidden;background:var(--tile)}
-.cs h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;margin-bottom:1rem}
-.cs section{padding-block:clamp(2rem,5vw,3.5rem)}
-.cs p.body{max-width:60ch;color:var(--muted)}
+.hero-img{border-radius:var(--r);overflow:hidden;background:var(--well)}
+.cs section{padding-block:calc(var(--u) * 6)}
+.cs h2{font-size:clamp(1.6rem,3.6vw,2.25rem);font-stretch:112%;letter-spacing:-.02em;margin-bottom:calc(var(--u) * 2)}
+.cs p.body{max-width:62ch;color:var(--muted)}
 .cs p.body strong{color:var(--ink);font-weight:600}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.75rem}
-.cards.two{grid-template-columns:repeat(2,1fr)}
-@media (max-width:48rem){.cards,.cards.two{grid-template-columns:1fr}}
-.card{background:var(--tile);border-radius:var(--r);padding:1.4rem}
-.card h4{font-size:1.15rem;font-weight:800;margin-bottom:.45rem}
-.card p{color:var(--muted);font-size:.98rem}
-.big{font-family:var(--font-display);font-weight:800;font-size:clamp(2.6rem,6vw,4rem);letter-spacing:-.04em;line-height:1}
-.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(var(--u) * 2);margin-top:calc(var(--u) * 3)}
+@media (max-width:48rem){.cards{grid-template-columns:1fr}}
+.card{background:var(--well);border-radius:var(--r);padding:calc(var(--u) * 2.5)}
+.card h4{font-size:1.0625rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.9375rem}
+.feats{margin-top:calc(var(--u) * 3);display:grid;max-width:48rem}
+.feats div{display:grid;grid-template-columns:14rem minmax(0,1fr);gap:var(--u) calc(var(--u) * 3);padding-block:calc(var(--u) * 1.5);border-top:1px solid var(--rule)}
+.feats dt{font-weight:600}
+.feats dd{color:var(--muted)}
+@media (max-width:40rem){.feats div{grid-template-columns:1fr;gap:2px}}
+.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(var(--u) * 3);margin-top:calc(var(--u) * 3)}
 @media (max-width:48rem){.metrics{grid-template-columns:1fr}}
-.metric{border-top:2px solid var(--ink);padding-top:.9rem}
-.metric p{color:var(--muted);margin-top:.4rem}
-.fig{margin-top:1.5rem;border-radius:var(--r);overflow:hidden;background:var(--tile)}
-.cap{margin-top:.6rem;color:var(--muted)}
-.list{list-style:none;padding:0;margin:1.25rem 0 0;display:grid;gap:.75rem;max-width:60ch}
-.list li{display:grid;grid-template-columns:1.25rem 1fr;gap:.6rem;color:var(--muted)}
-.list li::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--accent);margin-top:.6rem}
-.learn{display:grid;gap:0;margin-top:1rem}
-.learn div{display:grid;grid-template-columns:3rem 1fr;gap:1rem;padding-block:1.2rem;border-top:1px solid var(--line)}
-.learn b{font-family:var(--font-display);font-size:1.6rem;color:var(--accent)}
-.learn h4{font-size:1.2rem;font-weight:800;margin-bottom:.2rem}
+.metric{border-top:2px solid var(--ink);padding-top:calc(var(--u) * 1.5)}
+.big{font-weight:800;font-stretch:112%;font-size:clamp(2.5rem,6vw,3.75rem);letter-spacing:-.035em;line-height:1;font-variant-numeric:tabular-nums}
+.metric p{color:var(--muted);margin-top:var(--u)}
+.fig{margin:calc(var(--u) * 3) 0 0;border-radius:var(--r);overflow:hidden;background:var(--well);max-width:56rem}
+.cap{margin-top:var(--u);color:var(--muted);font-size:.9375rem}
+.list{list-style:square;padding-left:1.1rem;margin-top:calc(var(--u) * 2);display:grid;gap:var(--u);max-width:62ch;color:var(--muted)}
+.learn{display:grid;margin-top:var(--u);max-width:48rem}
+.learn div{padding-block:calc(var(--u) * 2);border-top:1px solid var(--rule)}
+.learn h4{font-size:1.125rem;margin-bottom:4px}
 .learn p{color:var(--muted)}
-.next{margin-top:2rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:1.5rem}
-.next a{font-family:var(--font-display);font-weight:800;font-size:1.4rem;text-decoration:none}
-.next a:hover{color:var(--accent)}
-
-.stack{border-radius:var(--r);overflow:hidden;background:#fff}
-.stack img{display:block;width:100%;height:auto}
+.next{margin-top:calc(var(--u) * 3);display:flex;justify-content:space-between;gap:calc(var(--u) * 2);flex-wrap:wrap;border-top:1px solid var(--rule);padding-block:calc(var(--u) * 3) calc(var(--u) * 6)}
+.next a{font-weight:700;font-stretch:112%;font-size:1.25rem;text-decoration:none}
+.next a:hover{color:var(--select)}
+.stack{border-radius:var(--r);overflow:hidden;background:var(--well)}
+.stack img{width:100%}
 
 /* lightbox */
-.lb{position:fixed;inset:0;z-index:50;background:rgba(8,9,12,.86);display:none;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(10,12,16,.9);display:none;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
 .lb.on{display:grid}
-.lb img{max-height:100%;max-width:min(100%,64rem);width:auto;border-radius:14px;object-fit:contain}
-.lb button{position:absolute;top:max(14px,env(safe-area-inset-top,0px));right:max(14px,env(safe-area-inset-right,0px));border:0;background:#fff;color:#0d0f14;width:2.5rem;height:2.5rem;border-radius:50%;cursor:pointer;font-size:1.2rem}
+.lb img{max-height:100%;max-width:min(100%,64rem);width:auto;border-radius:var(--r);object-fit:contain}
+.lb button{position:absolute;top:max(14px,env(safe-area-inset-top,0px));right:max(14px,env(safe-area-inset-right,0px));border:0;background:#FFFFFF;color:#16181D;width:40px;height:40px;border-radius:var(--r);cursor:pointer;font-size:1.1rem}
 
-/* scroll reveal, applied by script only to things below the fold */
-.pre{opacity:.001;transform:translateY(22px)}
-.reveal{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  .hero .rise{animation:none}.pre{opacity:1;transform:none}.reveal,.tile,.case .shot img,.arrow{transition:none}
-}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.shot,.tile,.btn{transition:none}}
 </style>
-
 </head><body>
 <header class="top" id="top">
   <div class="top-in">
@@ -228,91 +220,97 @@ footer{border-top:1px solid var(--line);padding-block:2rem 4rem;color:var(--mute
 <!-- HOME -->
 <div id="view-home" class="view">
   <div class="hero wide">
-    <div class="rise eyebrow mono">
-      <span>AI-forward product designer. UI/UX. Orange County, CA</span>
-      <span class="clock"><i></i><span id="clock">Local time</span></span>
+    <div class="sel" id="sel">
+      <span class="sel-tag">Product designer, UI/UX</span>
+      <h1 class="name">Jake Lewis</h1>
+      <span class="sel-box" aria-hidden="true"></span>
+      <span class="hdl tl" aria-hidden="true"></span><span class="hdl tr" aria-hidden="true"></span><span class="hdl bl" aria-hidden="true"></span><span class="hdl br" aria-hidden="true"></span>
+      <span class="dims" id="dims" aria-hidden="true"></span>
     </div>
-    <h1 class="rise name"><span>Jake</span><span>Lewis</span></h1>
-    <p class="rise lede">UI/UX Designer with 7+ years of experience designing intuitive interfaces, scaling design systems, testing with real users, and balancing business goals with usability.</p>  </div>
+    <p class="lede">UI/UX Designer with 7+ years of experience designing intuitive interfaces, scaling design systems, testing with real users, and balancing business goals with usability.</p>
+    <p class="where"><span>AI-forward product designer based in Orange County, CA</span><span id="clock"></span></p>
+  </div>
 
-  <section class="block wide reveal" id="work">
-    <div class="sec-head"><h2>Case Studies</h2><span class="mono">03 projects</span></div>
+  <section class="block wide" id="work">
+    <div class="head"><h2>Case studies</h2><p>Research, design decisions and results from three products.</p></div>
     <div class="cases">
-      <a class="case" href="#pens">
+      <a class="case feature" href="#pens">
         <div class="shot"><img src="img/cover-pens.jpg" width="800" height="480" alt="Pens.com shopping cart and category pages on two phones, beside the Pens.com logo"></div>
-        <div class="meta"><div><h3>Pens.com</h3><p>Redesigning a major e-commerce site.</p></div><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <div><h3>Pens.com</h3><p>Redesigning the product customizer on a major e-commerce site, lifting conversion 9%.</p><span class="more">Read the case study</span></div>
       </a>
       <a class="case" href="#dash">
         <div class="shot"><img src="img/cover-dash.jpg" width="800" height="480" alt="Dash challenge app screens next to the Dash logo" loading="lazy"></div>
-        <div class="meta"><div><h3>Dash</h3><p>Building a workout app for fitness influencers.</p></div><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <div><h3>Dash</h3><p>Building a workout app for fitness influencers.</p><span class="more">Read the case study</span></div>
       </a>
       <a class="case" href="#costar">
         <div class="shot"><img src="img/cover-costar.jpg" width="800" height="480" alt="CoStar profile and followers screens on a pink background" loading="lazy"></div>
-        <div class="meta"><div><h3>CoStar</h3><p>Concept for a karaoke app.</p></div><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <div><h3>CoStar</h3><p>Concept for a karaoke app.</p><span class="more">Read the case study</span></div>
       </a>
     </div>
   </section>
 
-  <section class="block wide reveal" id="explorations">
-    <div class="sec-head"><h2>Explorations</h2><span class="mono">12 screens</span></div>
+  <section class="block wide" id="explorations">
+    <div class="head"><h2>Explorations</h2><p>Interface studies and concepts. Select a screen to see it larger.</p></div>
     <div class="grid" id="grid"></div>
   </section>
 
-  <section class="block col reveal" id="resume">
-    <div class="sec-head"><h2>Resume</h2><span class="mono">2018 to now</span></div>
-    <article class="job">
-      <div class="when mono">Nov 2025 – Present</div>
-      <div><h3>Senior UI/UX Designer</h3><p class="co">QuinStreet · Full-time contract</p>
-        <ul>
-          <li>Lead AI-driven process and workflow improvements that reduce manual effort across the design team</li>
-          <li>Design responsive interfaces for websites and marketing platforms, with engagement and conversion as the goal</li>
-          <li>Build and maintain a scalable component library and design system in Figma that supports developer handoff</li>
-          <li>Partner with developers, marketers and business stakeholders, using analytics, user testing and A/B results to refine designs</li>
-        </ul></div>
-    </article>
-    <article class="job">
-      <div class="when mono">Dec 2023 – Jul 2025</div>
-      <div><h3>Lead Product Designer</h3><p class="co">National Pen</p>
-        <ul>
-          <li>Partnered with the Director of UX to revamp the e-commerce experience, increasing user satisfaction and aligning design with business KPIs</li>
-          <li>Championed a customer-first approach, connecting qualitative insights to measurable outcomes</li>
-          <li>Expanded user testing capabilities by launching unmoderated studies, identifying friction points and boosting task success rates</li>
-          <li>Mentored a cross-functional team of designers, raising team UX maturity and design consistency</li>
-        </ul></div>
-    </article>
-    <article class="job">
-      <div class="when mono">Sep 2021 – Dec 2023</div>
-      <div><h3>Sr. UX Designer</h3><p class="co">National Pen</p>
-        <ul>
-          <li>Redesigned end-to-end web experience for a global e-commerce site serving 10K+ daily users, enhancing usability and speed</li>
-          <li>Led research and prototyping for a personalized product customization tool, increasing conversions by 9% and cutting cancellations</li>
-          <li>Facilitated weekly cross-functional syncs to identify, prioritize, and resolve UX bottlenecks in the purchase flow</li>
-        </ul></div>
-    </article>
-    <article class="job">
-      <div class="when mono">Sep 2020 – Sep 2021</div>
-      <div><h3>UX Designer</h3><p class="co">National Pen</p>
-        <ul>
-          <li>Built and managed design system, including an extensive component library for multiple designers to utilize</li>
-          <li>Standardized design practices across multiple departments, introducing an 8px grid system and design guidelines for our desktop and mobile experiences</li>
-          <li>Established a clear line of communication between developers and designers to streamline production</li>
-        </ul></div>
-    </article>
-    <article class="job">
-      <div class="when mono">Jun 2018 – Jun 2019</div>
-      <div><h3>UX/UI Designer</h3><p class="co">Knife and Fox</p>
-        <ul>
-          <li>Directly collaborated with CEO and Product team to prototype, design and deliver the UI and UX experience with a lean design process: research, design, test, and iterate</li>
-        </ul></div>
-    </article>
+  <section class="block wide" id="resume">
+    <div class="head"><h2>Resume</h2><p>Product and UX roles since 2018, most recent first.</p></div>
+    <div class="jobs">
+      <article class="job">
+        <div class="when">Nov 2025 – Present</div>
+        <div><h3>Senior UI/UX Designer</h3><p class="co">QuinStreet, full-time contract</p>
+          <ul>
+            <li>Lead AI-driven process and workflow improvements that reduce manual effort across the design team</li>
+            <li>Design responsive interfaces for websites and marketing platforms, with engagement and conversion as the goal</li>
+            <li>Build and maintain a scalable component library and design system in Figma that supports developer handoff</li>
+            <li>Partner with developers, marketers and business stakeholders, using analytics, user testing and A/B results to refine designs</li>
+          </ul></div>
+      </article>
+      <article class="job">
+        <div class="when">Dec 2023 – Jul 2025</div>
+        <div><h3>Lead Product Designer</h3><p class="co">National Pen</p>
+          <ul>
+            <li>Partnered with the Director of UX to revamp the e-commerce experience, increasing user satisfaction and aligning design with business KPIs</li>
+            <li>Championed a customer-first approach, connecting qualitative insights to measurable outcomes</li>
+            <li>Expanded user testing capabilities by launching unmoderated studies, identifying friction points and boosting task success rates</li>
+            <li>Mentored a cross-functional team of designers, raising team UX maturity and design consistency</li>
+          </ul></div>
+      </article>
+      <article class="job">
+        <div class="when">Sep 2021 – Dec 2023</div>
+        <div><h3>Sr. UX Designer</h3><p class="co">National Pen</p>
+          <ul>
+            <li>Redesigned end-to-end web experience for a global e-commerce site serving 10K+ daily users, enhancing usability and speed</li>
+            <li>Led research and prototyping for a personalized product customization tool, increasing conversions by 9% and cutting cancellations</li>
+            <li>Facilitated weekly cross-functional syncs to identify, prioritize, and resolve UX bottlenecks in the purchase flow</li>
+          </ul></div>
+      </article>
+      <article class="job">
+        <div class="when">Sep 2020 – Sep 2021</div>
+        <div><h3>UX Designer</h3><p class="co">National Pen</p>
+          <ul>
+            <li>Built and managed design system, including an extensive component library for multiple designers to utilize</li>
+            <li>Standardized design practices across multiple departments, introducing an 8px grid system and design guidelines for our desktop and mobile experiences</li>
+            <li>Established a clear line of communication between developers and designers to streamline production</li>
+          </ul></div>
+      </article>
+      <article class="job">
+        <div class="when">Jun 2018 – Jun 2019</div>
+        <div><h3>UX/UI Designer</h3><p class="co">Knife and Fox</p>
+          <ul>
+            <li>Directly collaborated with CEO and Product team to prototype, design and deliver the UI and UX experience with a lean design process: research, design, test, and iterate</li>
+          </ul></div>
+      </article>
+    </div>
   </section>
 
-  <section class="block wide reveal" id="contact">
-    <div class="sec-head"><h2>Contact</h2><span class="mono">Say hello</span></div>
-    <div class="contact-grid">
+  <section class="block wide" id="contact">
+    <div class="head"><h2>Contact</h2><p>Send a note about a role or a project. I reply by email.</p></div>
+    <div class="contact">
       <dl class="reach">
-        <div><dt class="mono">Phone</dt><dd><span id="phoneTxt">(949) 632-1643</span><button class="copy" type="button" data-copy="(949) 632-1643">Copy</button></dd></div>
-        <div><dt class="mono">Email</dt><dd><span id="emailTxt">lewisrjacob@gmail.com</span><button class="copy" type="button" data-copy="lewisrjacob@gmail.com">Copy</button></dd></div>
+        <div><dt>Email</dt><dd><span>lewisrjacob@gmail.com</span><button class="copy" type="button" data-copy="lewisrjacob@gmail.com">Copy</button></dd></div>
+        <div><dt>Phone</dt><dd><span>(949) 632-1643</span><button class="copy" type="button" data-copy="(949) 632-1643">Copy</button></dd></div>
       </dl>
       <form id="cform" novalidate>
         <label for="cName">Your name<input id="cName" name="name" autocomplete="name" required></label>
@@ -333,121 +331,116 @@ footer{border-top:1px solid var(--line);padding-block:2rem 4rem;color:var(--mute
 <!-- PENS -->
 <div id="view-pens" class="view cs" hidden>
   <div class="wide">
-    <a class="back" href="#home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
-    <h1 class="cs-title">Pens.com Customizer Case Study</h1>
+    <a class="back" href="#home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All work</a>
+    <h1 class="cs-title">Pens.com Customizer</h1>
     <p class="cs-lede">Transforming the personalization experience on a major e-commerce site.</p>
     <dl class="facts">
-      <div><dt class="mono">Role</dt><dd>Lead Product Designer</dd></div>
-      <div><dt class="mono">Timeline</dt><dd>3 months (Q2 2024)</dd></div>
-      <div><dt class="mono">Tools</dt><dd>Figma, Google Analytics, Hotjar, UserTesting</dd></div>
+      <div><dt>Role</dt><dd>Lead Product Designer</dd></div>
+      <div><dt>Timeline</dt><dd>3 months (Q2 2024)</dd></div>
+      <div><dt>Tools</dt><dd>Figma, Google Analytics, Hotjar, UserTesting</dd></div>
     </dl>
     <div class="hero-img"><img src="img/cover-pens.jpg" width="800" height="480" alt="Pens.com on two phones"></div>
   </div>
   <div class="col">
-    <section><h2>The Challenge</h2>
+    <section><h2>The challenge</h2>
       <p class="body">The legacy customizer lost people at the customization step, where analytics showed a <strong>42% drop-off</strong>. Long scrolling, a limited preview and a fragmented mobile experience made it hard to see what you were building. The goal was a customization flow that works the same way on every screen.</p></section>
-    <section><h2>Research &amp; Discovery</h2>
+    <section><h2>Research and discovery</h2>
       <p class="body">Three sources shaped the direction.</p>
       <div class="cards">
         <div class="card"><h4>Analytics</h4><p>42% drop-off rate at the customization step.</p></div>
-        <div class="card"><h4>User Feedback</h4><p>15 user interviews revealed confusion around pricing.</p></div>
-        <div class="card"><h4>Competitive Analysis</h4><p>Reviewed 8 competitors for best-in-class customization.</p></div>
+        <div class="card"><h4>User feedback</h4><p>15 user interviews revealed confusion around pricing.</p></div>
+        <div class="card"><h4>Competitive analysis</h4><p>Reviewed 8 competitors for best-in-class customization.</p></div>
       </div>
     </section>
-    <section><h2>User Testing Results</h2>
+    <section><h2>User testing results</h2>
       <p class="body">Unmoderated user tests on the customizer showed that the lack of flexibility was the number one issue across customizer types.</p>
-      <figure class="fig" style="margin-inline:0"><img src="img/pens-testing.jpg" width="856" height="711" alt="User testing findings deck in Figma Slides, showing the highlight reel slide 'Users want more flexibility'" loading="lazy"></figure>
+      <figure class="fig"><img src="img/pens-testing.jpg" width="856" height="711" alt="User testing findings deck in Figma Slides, showing the highlight reel slide 'Users want more flexibility'" loading="lazy"></figure>
       <p class="cap">User testing findings (Figma Slides)</p></section>
-    <section><h2>Defining the Strategy</h2>
-      <p class="body"><strong>Problem definition.</strong> Research synthesis pointed to three core problems.</p>
+    <section><h2>Defining the strategy</h2>
+      <p class="body">Research synthesis pointed to three core problems.</p>
       <ul class="list">
         <li>The long scrolling of the page made it unintuitive to design the product</li>
         <li>Limited preview capabilities meant users could not see the result as they worked</li>
         <li>Fragmented mobile experience led to high abandonment</li>
       </ul></section>
-    <section><h2>Ideation and Wireframing</h2>
+    <section><h2>Ideation and wireframing</h2>
       <p class="body">Multiple wireframe versions led from a structural sketch to a mid-fidelity mobile design.</p>
-      <figure class="fig" style="margin-inline:0"><img src="img/pens-wireframes.jpg" width="830" height="967" alt="Initial wireframes next to the mid-fidelity mobile design of the customizer" loading="lazy"></figure></section>
-  </div>
-  <div class="wide">
-    <section><h2>Final Design</h2>
-      <p class="body" style="max-width:60ch">The redesigned customizer is a single interface that works across devices.</p>
-      <div class="cards">
-        <div class="card"><h4>Unified Customizer</h4><p>One coherent interface.</p></div>
-        <div class="card"><h4>Persistent CTA</h4><p>The next step stays in reach.</p></div>
-        <div class="card"><h4>Real-Time Preview</h4><p>Instant visual feedback as users make selections.</p></div>
-        <div class="card"><h4>Smooth Animations</h4><p>Transitions that keep the flow fluid.</p></div>
-        <div class="card"><h4>App-like toolbar</h4><p>Logo, Text, Layout and Product tools in one place.</p></div>
-      </div>
-      <figure class="fig"><img src="img/pens-final.jpg" width="886" height="630" alt="Desktop screenshot of the final customizer with a logo upload panel and a white t-shirt preview" loading="lazy"></figure>
+      <figure class="fig"><img src="img/pens-wireframes.jpg" width="830" height="967" alt="Initial wireframes next to the mid-fidelity mobile design of the customizer" loading="lazy"></figure></section>
+    <section><h2>Final design</h2>
+      <p class="body">The redesigned customizer is a single interface that works across devices.</p>
+      <dl class="feats">
+        <div><dt>Unified customizer</dt><dd>One coherent interface.</dd></div>
+        <div><dt>Persistent CTA</dt><dd>The next step stays in reach.</dd></div>
+        <div><dt>Real-time preview</dt><dd>Instant visual feedback as users make selections.</dd></div>
+        <div><dt>Smooth animations</dt><dd>Transitions that keep the flow fluid.</dd></div>
+        <div><dt>App-like toolbar</dt><dd>Logo, Text, Layout and Product tools in one place.</dd></div>
+      </dl>
+      <figure class="fig" style="max-width:none"><img src="img/pens-final.jpg" width="886" height="630" alt="Desktop screenshot of the final customizer with a logo upload panel and a white t-shirt preview" loading="lazy"></figure>
       <p class="cap">Desktop screenshot</p></section>
-  </div>
-  <div class="col">
-    <section><h2>Results &amp; Impact</h2>
+    <section><h2>Results and impact</h2>
       <p class="body">The redesigned customizer launched in June 2024.</p>
       <div class="metrics">
         <div class="metric"><div class="big">↑ 9%</div><p>Conversion rate increase</p></div>
         <div class="metric"><div class="big">↓ 42%</div><p>Support calls about customization</p></div>
         <div class="metric"><div class="big">↑ 24%</div><p>Mobile customization completion</p></div>
       </div></section>
-    <section><h2>Key Learnings</h2>
+    <section><h2>Key learnings</h2>
       <div class="learn">
-        <div><b>1</b><span><h4>Mobile-first is essential</h4><p>With 60% of traffic coming from mobile devices, optimizing for mobile came first.</p></span></div>
-        <div><b>2</b><span><h4>Stakeholder input is crucial</h4><p>Users need to see pricing and preview their customization.</p></span></div>
-        <div><b>3</b><span><h4>Test early and often</h4><p>Usability testing at the wireframe stage saved significant effort.</p></span></div>
-        <div><b>4</b><span><h4>Data drives decisions</h4><p>Combining quantitative analytics with qualitative research.</p></span></div>
+        <div><h4>Mobile-first is essential</h4><p>With 60% of traffic coming from mobile devices, optimizing for mobile came first.</p></div>
+        <div><h4>Stakeholder input is crucial</h4><p>Users need to see pricing and preview their customization.</p></div>
+        <div><h4>Test early and often</h4><p>Usability testing at the wireframe stage saved significant effort.</p></div>
+        <div><h4>Data drives decisions</h4><p>Combining quantitative analytics with qualitative research.</p></div>
       </div></section>
-    <div class="next"><a href="#dash">Next: Dash →</a><a href="#contact">Get in touch</a></div>
+    <div class="next"><a href="#dash">Next: Dash</a><a href="#contact">Get in touch</a></div>
   </div>
 </div>
 
 <!-- DASH -->
 <div id="view-dash" class="view cs" hidden>
   <div class="wide">
-    <a class="back" href="#home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
+    <a class="back" href="#home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All work</a>
     <h1 class="cs-title">Dash</h1>
     <p class="cs-lede">Building a workout app for fitness influencers.</p>
   </div>
-  <div class="stack" style="max-width:54rem;margin:2.5rem auto 0">
+  <div class="stack" style="max-width:54rem;margin:calc(var(--u) * 5) auto 0">
     <img src="img/dash-0.jpg" width="865" height="1500" alt="Dash case study, part 1: Challenge Yourself. Dash is a mobile app for 30-day community challenges with friends, with the My Challenges and social feed screens.">
     <img src="img/dash-1.jpg" width="865" height="1500" alt="Dash case study, part 2: the challenge, invite friends and leaderboard screens." loading="lazy">
     <img src="img/dash-2.jpg" width="865" height="1500" alt="Dash case study, part 3: user testing, goals, results and solution." loading="lazy">
     <img src="img/dash-3.jpg" width="865" height="1544" alt="Dash case study, part 4: why we changed, how we changed, and lessons learned." loading="lazy">
   </div>
   <div class="col">
-    <div class="next"><a href="#costar">Next: CoStar →</a><a href="#home">All work</a></div>
+    <div class="next"><a href="#costar">Next: CoStar</a><a href="#home">All work</a></div>
   </div>
 </div>
 
 <!-- COSTAR -->
 <div id="view-costar" class="view cs" hidden>
   <div class="wide">
-    <a class="back" href="#home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
+    <a class="back" href="#home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All work</a>
     <h1 class="cs-title">CoStar</h1>
     <p class="cs-lede">Concept for a karaoke app.</p>
   </div>
-  <div class="stack wide" style="margin-top:2.5rem">
+  <div class="stack wide" style="margin-top:calc(var(--u) * 5)">
     <img src="img/costar-0.jpg" width="1115" height="1500" alt="CoStar case study, part 1: a major UX overhaul of an app where users act out scenes together, with script and performance screens.">
     <img src="img/costar-1.jpg" width="1115" height="1500" alt="CoStar case study, part 2: the initial app and the redesign objectives." loading="lazy">
     <img src="img/costar-2.jpg" width="1115" height="1574" alt="CoStar case study, part 3: new screens including a script reader, teleprompter and social pages, and lessons learned." loading="lazy">
   </div>
   <div class="col">
-    <div class="next"><a href="#pens">Next: Pens.com →</a><a href="#home">All work</a></div>
+    <div class="next"><a href="#pens">Next: Pens.com</a><a href="#home">All work</a></div>
   </div>
 </div>
 </main>
 
 <footer class="wide">
   <span>© 2026 Jake Lewis</span>
-  <span class="mono">Product design. UI/UX. Orange County, CA</span>
+  <span>Product design and UI/UX, Orange County, CA</span>
 </footer>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Exploration preview"><button type="button" id="lbClose" aria-label="Close preview">✕</button><img id="lbImg" alt=""></div>
 
 <script>
 (function(){
-  /* Set this to a form service URL (for example a Formspree endpoint) when you host this file yourself.
-     Inside the Claude viewer, network calls are blocked, so the form falls back to a copyable message. */
+  /* Formspree endpoint. Inside the Claude viewer network calls are blocked, so the form falls back to a copyable message there. */
   var FORM_ENDPOINT = "https://formspree.io/f/xvkkkpok";
 
   var views = {home:1,pens:1,dash:1,costar:1};
@@ -464,11 +457,18 @@ footer{border-top:1px solid var(--line);padding-block:2rem 4rem;color:var(--mute
     var n = (i<10?'0':'')+i;
     var b = document.createElement('button');
     b.type='button'; b.className='tile'; b.setAttribute('aria-label','Open: '+a);
-    var im = new Image(); im.src='img/ex-'+n+'.jpg'; im.alt=a; im.width=392; im.height=317; if(i>3) im.loading='lazy';
+    var im = new Image(); im.src='img/ex-'+n+'.jpg'; im.alt=a; im.width=392; im.height=317; if(i>2) im.loading='lazy';
     b.appendChild(im);
     b.addEventListener('click',function(){openLb(im.src,a)});
     grid.appendChild(b);
   });
+
+  /* live size readout on the hero frame */
+  var sel=document.getElementById('sel'), dims=document.getElementById('dims');
+  function measure(){var r=sel.getBoundingClientRect(); if(r.width) dims.textContent=Math.round(r.width)+' × '+Math.round(r.height)}
+  measure();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(measure);
+  if('ResizeObserver' in window) new ResizeObserver(measure).observe(sel); else window.addEventListener('resize',measure);
 
   /* lightbox */
   var lb=document.getElementById('lb'), lbImg=document.getElementById('lbImg'), lastFocus=null;
@@ -483,35 +483,22 @@ footer{border-top:1px solid var(--line);padding-block:2rem 4rem;color:var(--mute
     Object.keys(views).forEach(function(k){document.getElementById('view-'+k).hidden = (k!==view)});
     var titles={home:'Jake Lewis Portfolio',pens:'Pens.com Case Study | Jake Lewis',dash:'Dash | Jake Lewis',costar:'CoStar | Jake Lewis'};
     document.title=titles[view];
-    if(view==='home' && h!=='home'){
-      var el=document.getElementById(h);
-      if(el){setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'})},30);return}
+    if(view==='home'){
+      measure();
+      if(h!=='home'){var el=document.getElementById(h); if(el){setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'})},30);return}}
     }
     window.scrollTo(0,0);
-    revealSetup();
   }
   window.addEventListener('hashchange',route);
-
-  /* scroll reveal: only below-the-fold items start offset, so the page is complete at rest */
-  var io=null;
-  function revealSetup(){
-    if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-    if(io)io.disconnect();
-    io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
-    document.querySelectorAll('.view:not([hidden]) .reveal, .view:not([hidden]).cs section').forEach(function(el){
-      var r=el.getBoundingClientRect();
-      if(r.top>window.innerHeight*0.9){el.classList.add('reveal','pre');io.observe(el)}
-    });
-  }
 
   /* header border once scrolled */
   var top_=document.getElementById('top');
   window.addEventListener('scroll',function(){top_.classList.toggle('stuck',window.scrollY>8)},{passive:true});
 
-  /* clock for Orange County */
+  /* local time in Orange County */
   var clock=document.getElementById('clock');
   function tick(){
-    try{clock.textContent=new Intl.DateTimeFormat('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/Los_Angeles'}).format(new Date())+' in Orange County'}catch(e){}
+    try{clock.textContent='Local time '+new Intl.DateTimeFormat('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/Los_Angeles'}).format(new Date())}catch(e){}
   }
   tick(); setInterval(tick,30000);
 
@@ -527,7 +514,7 @@ footer{border-top:1px solid var(--line);padding-block:2rem 4rem;color:var(--mute
   });
 
   /* copy helpers */
-  function copyText(text,btn,done){
+  function copyText(text,done){
     function fallback(){
       var t=document.createElement('textarea');t.value=text;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();
       try{document.execCommand('copy');done(true)}catch(e){done(false)}document.body.removeChild(t);
@@ -537,7 +524,7 @@ footer{border-top:1px solid var(--line);padding-block:2rem 4rem;color:var(--mute
   document.querySelectorAll('.copy[data-copy]').forEach(function(b){
     b.addEventListener('click',function(){
       var old=b.textContent;
-      copyText(b.getAttribute('data-copy'),b,function(ok){b.textContent=ok?'Copied':'Select to copy';setTimeout(function(){b.textContent=old},1600)});
+      copyText(b.getAttribute('data-copy'),function(ok){b.textContent=ok?'Copied':'Select to copy';setTimeout(function(){b.textContent=old},1600)});
     });
   });
 
@@ -545,7 +532,7 @@ footer{border-top:1px solid var(--line);padding-block:2rem 4rem;color:var(--mute
   var form=document.getElementById('cform'),st=document.getElementById('cStatus'),fb=document.getElementById('cFallback'),out=document.getElementById('cOut'),send=document.getElementById('cSend');
   function setStatus(t,c){st.textContent=t;st.className='status'+(c?' '+c:'')}
   document.getElementById('cCopyOut').addEventListener('click',function(){
-    var b=this;copyText(out.value,b,function(ok){b.textContent=ok?'Copied':'Select the text above';setTimeout(function(){b.textContent='Copy message'},1600)});
+    var b=this;copyText(out.value,function(ok){b.textContent=ok?'Copied':'Select the text above';setTimeout(function(){b.textContent='Copy message'},1600)});
   });
   form.addEventListener('submit',function(e){
     e.preventDefault();
@@ -568,5 +555,4 @@ footer{border-top:1px solid var(--line);padding-block:2rem 4rem;color:var(--mute
   route();
 })();
 </script>
-
 </body></html>
