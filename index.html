@@ -77,6 +77,10 @@ nav a:hover{color:var(--ink)}
 .hdl.tl{top:-4px;left:-4px}.hdl.tr{top:-4px;right:-4px}.hdl.bl{bottom:-4px;left:-4px}.hdl.br{bottom:-4px;right:-4px}
 .dims{position:absolute;top:100%;left:50%;transform:translate(-50%,8px);background:var(--select);color:var(--select-ink);font-size:.75rem;font-weight:500;line-height:1;padding:4px 6px;border-radius:3px;font-variant-numeric:tabular-nums;white-space:nowrap}
 .lede{margin-top:calc(var(--u) * 8);font-size:clamp(1.25rem,2.6vw,1.75rem);line-height:1.35;letter-spacing:-.01em;max-width:36ch}
+.tools{list-style:none;margin:calc(var(--u) * 4) 0 0;padding:0;display:flex;align-items:center;gap:calc(var(--u) * 3)}
+.tools a{display:grid;align-items:center;justify-items:start;height:44px;min-width:32px;border-radius:var(--r);opacity:.92;transition:opacity .15s,transform .15s}
+.tools a:hover{opacity:1;transform:translateY(-2px)}
+.tools img{height:30px;width:auto;max-width:none}
 .where{margin-top:calc(var(--u) * 3);color:var(--muted);display:flex;flex-wrap:wrap;gap:var(--u) calc(var(--u) * 3)}
 @media (prefers-reduced-motion:no-preference){
   .sel-box{animation:draw .55s .2s cubic-bezier(.2,.7,.2,1) both}
@@ -232,6 +236,11 @@ footer{border-top:1px solid var(--rule);padding-block:calc(var(--u) * 4) calc(va
       <span class="dims" id="dims" aria-hidden="true"></span>
     </div>
     <p class="lede">UI/UX Designer with 7+ years of experience designing intuitive interfaces, scaling design systems, testing with real users, and balancing business goals with usability.</p>
+    <ul class="tools" aria-label="Tools I design with">
+      <li><a href="https://www.figma.com" target="_blank" rel="noopener" aria-label="Figma" title="Figma"><img src="img/logo-figma.png" width="20" height="30" alt=""></a></li>
+      <li><a href="https://www.usertesting.com" target="_blank" rel="noopener" aria-label="UserTesting" title="UserTesting"><img src="img/logo-usertesting.svg" width="23" height="30" alt=""></a></li>
+      <li><a href="https://claude.ai" target="_blank" rel="noopener" aria-label="Claude" title="Claude"><img src="img/logo-claude.png" width="30" height="30" alt=""></a></li>
+    </ul>
     <p class="where"><span>AI-forward product designer based in Orange County, CA</span><span id="clock"></span></p>
   </div>
 
